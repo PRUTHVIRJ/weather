@@ -1,10 +1,4 @@
 <<<<<<< HEAD
-# weather
-=======
-# Near Real-Time Weather Data Processing
-`v1.0.1`
-
-![Near Real-Time Weather Data Processing](https://github.com/tati2002med/Near-Real-Time-Weather-Data-Processing/assets/95311883/9e8e3249-a890-43b9-bb61-f1c7e5151aa7)
 
 In this project we are trying to learn diffrent technologies from the `back-end` to the `front-end`. In this project we don't have a goal in the weather data itself but the most important is to gain some basic knowledge in near-real time data processing.
 - Project Components:
