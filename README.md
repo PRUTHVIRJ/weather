@@ -1,25 +1,23 @@
-####overveiw
+### overveiw
 Near-Real-Time Weather Data Processing
 In this project, we embark on an exploratory journey through various technologies, from back-end systems to front-end interfaces. Our primary objective isn't solely the weather data itself but to gain foundational knowledge in near-real-time data processing.
 
-###Key Components
+### Key Components
 Kappa Architecture: Our backbone for this project is the Kappa Architecture, which provides a flexible, fault-tolerant, and scalable framework for processing substantial data streams. While typically used for real-time data, we're adapting it for near-real-time processing of weather information, acknowledging that such data may not be perfectly accurate.
 
-###Open Weather APIs:
-
-#Geocoding API: This tool from OpenWeather simplifies location searches using geographic names. We utilize this API to retrieve the latitude and longitude of user-specified cities, paving the way for precise weather data retrieval.
+### Open Weather APIs:
+Geocoding API: This tool from OpenWeather simplifies location searches using geographic names. We utilize this API to retrieve the latitude and longitude of user-specified cities, paving the way for precise weather data retrieval.
 Weather Current Data API: Access current weather data from any location on Earth! OpenWeather aggregates and processes weather information from various sources, including global and local weather models, satellites, radars, and an extensive network of weather stations. The data is available in versatile formats such as JSON, XML, or HTML.
-#EC2 Instance: Leveraging Amazon Elastic Compute Cloud (EC2), part of Amazon Web Services (AWS), we set up a virtual machine running Ubuntu to host our back-end code, providing the computational power needed for our application.
+EC2 Instance: Leveraging Amazon Elastic Compute Cloud (EC2), part of Amazon Web Services (AWS), we set up a virtual machine running Ubuntu to host our back-end code, providing the computational power needed for our application.
 
-#AWS Gateway API: This AWS service facilitates the creation, publishing, maintenance, monitoring, and securing of RESTful, HTTP, and WebSocket APIs at any scale. We employ it to secure the connection between our VM and the front-end, which is hosted on GitHub Pages.
+AWS Gateway API: This AWS service facilitates the creation, publishing, maintenance, monitoring, and securing of RESTful, HTTP, and WebSocket APIs at any scale. We employ it to secure the connection between our VM and the front-end, which is hosted on GitHub Pages.
 
-#Angular: As a TypeScript-based framework for single-page web applications, Angular serves as the bridge between our Spring Boot API and the user interface, ensuring smooth communication and a seamless user experience.
+Angular: As a TypeScript-based framework for single-page web applications, Angular serves as the bridge between our Spring Boot API and the user interface, ensuring smooth communication and a seamless user experience.
 
 Kafka, Spark, and Cassandra: This trio forms the heart of our near-real-time data processing efforts, allowing us to efficiently handle and analyze incoming weather data streams.
 
-#Dashboard Update: We're currently working on enhancing our dashboard feature. Although it's not supported in version 1.0.1, we are creatively addressing this to deliver an engaging and informative user interface.
+Dashboard Update: We're currently working on enhancing our dashboard feature. Although it's not supported in version 1.0.1, we are creatively addressing this to deliver an engaging and informative user interface.
 
-To try the app go to: https://github.com/PRUTHVIRJ/weather.git
 ### Developer Guide:
 In order to run the code on your local machine you can clone the repository:
 ```bash
@@ -85,4 +83,3 @@ Now, you can access the app over: **http://localhost:8080**
     WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
   ```
 
->>>>>>> c3f2bf4 (first commit)
