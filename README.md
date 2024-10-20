@@ -1,23 +1,30 @@
-<<<<<<< HEAD
+####overveiw
+Near-Real-Time Weather Data Processing
+In this project, we embark on an exploratory journey through various technologies, from back-end systems to front-end interfaces. Our primary objective isn't solely the weather data itself but to gain foundational knowledge in near-real-time data processing.
 
-In this project we are trying to learn diffrent technologies from the `back-end` to the `front-end`. In this project we don't have a goal in the weather data itself but the most important is to gain some basic knowledge in near-real time data processing.
-- Project Components:
-    - `Kappa Architecture`: a data processing architecture that is designed to provide a flexible, fault-tolerant, and scalable architecture for processing large amounts of data in real-time. But in our case we will use it for near-real time because weather data can't be `real time` also can't be too accurate.
-    - `Open Weather APIs`:
-      - `Geocoding API`: a simple tool that `OpenWeather` developed to ease the search for locations while working with geographic names. We will use this api to get the `lat` & `lon` of the city that the user search for than we will get the weather data of that city. 
-      - `Weather Current Data API`: Access current weather data for any location on Earth! `OpenWeather` collects and process weather data from different sources such as global and local weather models, satellites, radars and a vast network of weather stations. Data is available in JSON, XML, or HTML format.
-    - `EC2 instance`: Amazon Elastic Compute Cloud is a part of Amazon.com's cloud-computing platform, Amazon Web Services, that allows users to rent virtual computers on which to run their own computer applications. We have use it to create a `Ubuntu VM` to contain our back-end code.
-    - `AWS GATEWAY API`: an AWS service for creating, publishing, maintaining, monitoring, and securing REST, HTTP, and WebSocket APIs at any scale. We used it secure the connection between the VM and the front-end that is deployed over `GitHub pages`.
-    - `Angular`: a TypeScript-based, free and open-source single-page web application framework. We used it to communicate between our `Spring Boot Api` and the `User Interface`.
-    - `Kafka`, `Spark` and `Cassandra`: that is the near-real time data processing team :)
-    - `Dashboard Update`: Still working on it. Not supported in the `v1.0.1`.
+###Key Components
+Kappa Architecture: Our backbone for this project is the Kappa Architecture, which provides a flexible, fault-tolerant, and scalable framework for processing substantial data streams. While typically used for real-time data, we're adapting it for near-real-time processing of weather information, acknowledging that such data may not be perfectly accurate.
 
-To try the app go to: https://tati2002med.github.io/weather-app/
+###Open Weather APIs:
+
+#Geocoding API: This tool from OpenWeather simplifies location searches using geographic names. We utilize this API to retrieve the latitude and longitude of user-specified cities, paving the way for precise weather data retrieval.
+Weather Current Data API: Access current weather data from any location on Earth! OpenWeather aggregates and processes weather information from various sources, including global and local weather models, satellites, radars, and an extensive network of weather stations. The data is available in versatile formats such as JSON, XML, or HTML.
+#EC2 Instance: Leveraging Amazon Elastic Compute Cloud (EC2), part of Amazon Web Services (AWS), we set up a virtual machine running Ubuntu to host our back-end code, providing the computational power needed for our application.
+
+#AWS Gateway API: This AWS service facilitates the creation, publishing, maintenance, monitoring, and securing of RESTful, HTTP, and WebSocket APIs at any scale. We employ it to secure the connection between our VM and the front-end, which is hosted on GitHub Pages.
+
+#Angular: As a TypeScript-based framework for single-page web applications, Angular serves as the bridge between our Spring Boot API and the user interface, ensuring smooth communication and a seamless user experience.
+
+Kafka, Spark, and Cassandra: This trio forms the heart of our near-real-time data processing efforts, allowing us to efficiently handle and analyze incoming weather data streams.
+
+#Dashboard Update: We're currently working on enhancing our dashboard feature. Although it's not supported in version 1.0.1, we are creatively addressing this to deliver an engaging and informative user interface.
+
+To try the app go to: https://github.com/PRUTHVIRJ/weather.git
 ### Developer Guide:
 In order to run the code on your local machine you can clone the repository:
 ```bash
-git clone https://github.com/tati2002med/Near-Real-Time-Weather-Data-Processing.git
-cd Near-Real-Time-Weather-Data-Processing
+git clone https://github.com/PRUTHVIRJ/weather.git
+cd weather
 ```
 we need some requirements `Zookeeper`, `Kafka`, `Spark` and `Cassandra` you can get them by running the docker compose file:
 ```bash
