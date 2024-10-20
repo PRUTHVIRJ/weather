@@ -82,4 +82,3 @@ Now, you can access the app over: **http://localhost:8080**
   CREATE KEYSPACE IF NOT EXISTS weather
     WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
   ```
-
